@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
+project(EXP)
+add_subdirectory(dct)
+add_subdirectory(gemm)
+add_subdirectory(hdr)
+add_custom_target(EXP DEPENDS DCT GEMM HDR)

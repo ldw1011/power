@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
+project(MAT)
+add_subdirectory(c_src)
+add_subdirectory(cdata)
+add_custom_target(MAT DEPENDS test_dct  MAT_TEST)

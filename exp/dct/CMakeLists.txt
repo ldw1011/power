@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
+project(DCT)
+add_subdirectory(c_src)
+add_subdirectory(cdata)
+add_subdirectory(pwr)
+add_custom_target(DCT DEPENDS test_dct  DCT_TEST DCT_PWR)

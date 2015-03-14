@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
+project(adder)
+add_subdirectory(verilog)
+add_subdirectory(synth)
+add_subdirectory(gate)
+add_subdirectory(power)
+add_custom_target(add_all DEPENDS add_power)
